@@ -57,6 +57,31 @@
                 }         
             
             ?>
+
+            <!-- alternative syntax -->
+            
+            <?php foreach($album as $element): ?>
+
+                <div class="box">
+                
+                    <div class="album">
+                        <img src="<?php echo $element["poster"] ?>" alt="immagine album">
+                    </div>
+                    <h1><?php echo $element['title'] ?></h1>
+
+                    <h2><?php echo $element['author'] ?></h2>
+                
+                    <p><?php echo $element['genre'] ?></p>
+
+                    <p><?php echo $element['year'] ?></p>
+                
+                </div>
+            
+            <?php endforeach; ?>
+
+            
+
+
       </main>
       <!-- /main -->
     </div>

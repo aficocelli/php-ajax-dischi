@@ -1,4 +1,5 @@
 /* MIX */
+
 *{
   margin:0;
   padding:0;
@@ -14,16 +15,10 @@ header{
   display:flex;
   align-items:center;
 }
-section{
-  padding:20px;
-  height:10vh;
-  display:flex;
-  align-items:center;
-  justify-content: space-between;
-}
+
 main{
   background-color:#656565;
-  height:80vh;
+  height:90vh;
   display:flex;
   flex-wrap: wrap;
   overflow-y: auto;

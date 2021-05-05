@@ -31,26 +31,11 @@
         </div>
       </header>
       <!-- /header -->
-      <!-- section options -->
-      <section>
-        <!-- select -->
-        <select id="genre-option" v-model="selected">
-          <option value="">All</option>
-          <option v-for="genre in genreOption" :value="genre">{{genre}}</option>
-        </select>
-        <!-- section options -->
-        <select name="" id="ordered-option" v-model="ordered">
-          <option value="">Anno</option>
-          <option value="1">Title</option>
-          <option value="2">Genre</option>
-        </select>
-      
-        <!-- /select -->
-      </section>
+    
       <!-- main -->
       <main>
         <!-- main box -->
-        <div class="box" v-for="album in albumOrdinati" v-if="(album.genre == selected) || (selected == '')">
+        <div class="box" v-for="album in albums">
           <div class="album">
             <img :src="album.poster" :alt="album.title">
           </div>
@@ -60,7 +45,6 @@
           <p>{{album.year}}</p>
         </div>
         <!-- /main box -->
-
       </main>
       <!-- /main -->
     </div>

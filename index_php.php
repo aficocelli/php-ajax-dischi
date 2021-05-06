@@ -1,11 +1,8 @@
 <?php
-
     include __DIR__ . '/db.php';
 
-
+  
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -34,12 +31,13 @@
         </div>
       </header>
       <!-- /header -->
+     
     
       <!-- main -->
       <main>
         <!-- main box -->
         
-            <?php 
+              <?php  
 
                 foreach($album as $item){
 
@@ -51,14 +49,13 @@
                     echo '<h2>'. $item['author'].'</h2>';
 
                     echo '<p>'. $item['genre'] .'</p>';
-
+                    
                     echo '<p>'. $item['year'] .'</p></div>';
-
+                    
                 }         
             
-            ?>
-
-            <!-- alternative syntax -->
+              ?> 
+ -->
             
             <?php foreach($album as $element): ?>
 
